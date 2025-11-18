@@ -1,4 +1,3 @@
-
 -- question one
 select id, first_name, last_name
 from Employee
@@ -31,7 +30,7 @@ from Employee e
 join Leave l on e.leave_id = l.id
 where CURRENT_DATE between l.start_date and l.end_date;
 
--- question 6
+-- question 6 
 select e.id, e.first_name, e.last_name, t.name as team_name
 from Employee e
 join Leave l on e.leave_id = l.id

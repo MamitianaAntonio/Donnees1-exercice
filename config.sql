@@ -11,6 +11,12 @@ create table Employee (
     leave_id int references Leave(id)
 );
 
+create table Leave (
+    id serial primary key,
+    start_date date,
+    end_date date
+);
+
 create table Team (
     id serial primary key,
     name varchar(50),
